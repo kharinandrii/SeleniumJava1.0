@@ -1,5 +1,4 @@
 import org.testng.annotations.Test;
-import steps.BasicTest;
 
 public class FirstTaskTest extends BasicTest {
 
@@ -8,7 +7,9 @@ public class FirstTaskTest extends BasicTest {
     public void firstTaskTest() {
         mainPage.goTo()
                 .chooseTask("1");
-        firstTaskPage.checkTask("1");
+        firstTaskPage.checkTask("1")
+        .fillNumericField("2")
+        .clickDodajButton();
 
     }
 

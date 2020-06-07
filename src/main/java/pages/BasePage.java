@@ -36,5 +36,9 @@ public class BasePage {
     public void getElementText(By elementBy) {
         driver.findElement(elementBy).getText();
     }
+
+    public void clearField(By elementBy) {
+        driver.findElement(elementBy).clear();
+    }
 }
-//TODO https://www.youtube.com/watch?v=oZ9olw_5vRc&list=PLkcxxftlu7Qq5mzkiQKVrU7Xhx8GerNbr&index=4&t=3s
+

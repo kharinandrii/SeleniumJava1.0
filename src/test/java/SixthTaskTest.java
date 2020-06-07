@@ -1,5 +1,4 @@
 import org.testng.annotations.Test;
-import steps.BasicTest;
 
 public class SixthTaskTest extends BasicTest {
     @Test
