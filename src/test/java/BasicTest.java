@@ -6,14 +6,14 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
-import pages.FirstTaskPage;
+import pages.LoginPage;
 import pages.MainPage;
-import pages.SixthTaskPage;
+import pages.OfficePage;
 
 public class BasicTest {
     public MainPage mainPage;
-    public FirstTaskPage firstTaskPage;
-    public SixthTaskPage sixthTaskPage;
+    public LoginPage loginPage;
+    public OfficePage officePage;
     WebDriver driver;
 
     @BeforeTest
@@ -23,8 +23,8 @@ public class BasicTest {
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
         mainPage = PageFactory.initElements(driver, MainPage.class);
-        firstTaskPage = PageFactory.initElements(driver, FirstTaskPage.class);
-        sixthTaskPage = PageFactory.initElements(driver, SixthTaskPage.class);
+        loginPage = PageFactory.initElements(driver, LoginPage.class);
+        officePage = PageFactory.initElements(driver, OfficePage.class);
     }
     @AfterTest
     public void quit() {

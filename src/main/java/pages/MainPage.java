@@ -4,6 +4,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 public class MainPage extends BasePage {
+
+
     public MainPage (WebDriver driver) {
         super(driver);
     }
@@ -14,8 +16,8 @@ public class MainPage extends BasePage {
         return this;
     }
 
-    public MainPage chooseTask(String taskNumber) {
-        clickElement(By.xpath("//*[text() = 'Zadanie "+ taskNumber+"']"));
+    public MainPage OpenLoginPage() {
+        clickElement(By.xpath("//*[text() = 'Войти']"));
         return this;
     }
 

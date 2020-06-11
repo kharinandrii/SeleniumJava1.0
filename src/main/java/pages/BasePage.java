@@ -9,7 +9,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class BasePage {
     public WebDriver driver;
     public WebDriverWait wait;
-    String URL = "https://testingcup.pgs-soft.com/";
+    String URL = "https://teamring.tcl.ukrtech.info/";
 
     public BasePage(WebDriver driver) {
         this.driver = driver;
