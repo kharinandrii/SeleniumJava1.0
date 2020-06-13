@@ -14,10 +14,11 @@ public class OfficePage extends BasePage {
     }
     Params params = new Params();
 
-    public OfficePage checkAdminStatus() {
+    public OfficePage checkUserLogin() {
         WebElement element = driver.findElement(By.xpath("//*[@class = 'panel_user_name']/span"));
         String adminStatus = element.getText();
-        put("admin", adminStatus);
+        String expected = get("login", String.class);
+        assert adminStatus.equals(expected);
         return this;
     }
 

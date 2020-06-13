@@ -1,17 +1,26 @@
-import Tools.Params;
+import dataProviderPack.ExellReader;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-public class LoginPageTest extends BasicTest {
-    Params params = new Params();
+import java.io.IOException;
 
-    @Test
-    public void firstTaskTest() {
+public class LoginPageTest extends BasicTest {
+
+
+    @DataProvider(name = "loginExellDataProvider")
+    public Object[][] exelData() throws IOException {
+        return new ExellReader().readXls();
+    }
+
+    @Test(dataProvider = "loginExellDataProvider")
+    public void firstTaskTest(String login, String password) {
         mainPage.goTo()
                 .OpenLoginPage();
         loginPage
-        .fillLoginField(params.ADMIN_LOGIN)
-                .fillPasswordField(params.ADMIN_PASSWORD)
+        .fillLoginField(login)
+                .fillPasswordField(password)
                 .clickLoginButton();
+        officePage.checkUserLogin();
 
 
 

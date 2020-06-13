@@ -59,6 +59,13 @@
             <artifactId>poi-ooxml</artifactId>
             <version>4.1.2</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.odftoolkit/odftoolkit -->
+        <dependency>
+            <groupId>org.apache.odftoolkit</groupId>
+            <artifactId>odftoolkit</artifactId>
+            <version>0.6.2-incubating</version>
+            <type>pom</type>
+        </dependency>
 
 
     </dependencies>
