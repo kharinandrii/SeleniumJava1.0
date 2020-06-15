@@ -29,5 +29,9 @@ public class OfficePage extends BasePage {
         clickElement(By.xpath("//*[text() = 'Выход']"));
         return this;
     }
+    public OfficePage chooseProfileMenu() {
+        clickElement(By.xpath("//*[text() = 'Профиль']"));
+        return this;
+    }
 
 }

@@ -9,11 +9,13 @@ import org.testng.annotations.BeforeTest;
 import pages.LoginPage;
 import pages.MainPage;
 import pages.OfficePage;
+import pages.ProfilePage;
 
 public class BasicTest {
     public MainPage mainPage;
     public LoginPage loginPage;
     public OfficePage officePage;
+    public ProfilePage profilePage;
     WebDriver driver;
 
     @BeforeTest
@@ -25,6 +27,7 @@ public class BasicTest {
         mainPage = PageFactory.initElements(driver, MainPage.class);
         loginPage = PageFactory.initElements(driver, LoginPage.class);
         officePage = PageFactory.initElements(driver, OfficePage.class);
+        profilePage = PageFactory.initElements(driver, ProfilePage.class);
     }
     @AfterTest
     public void quit() {

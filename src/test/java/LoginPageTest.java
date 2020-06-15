@@ -18,9 +18,13 @@ public class LoginPageTest extends BasicTest {
                 .fillPasswordField(password)
                 .clickLoginButton();
         officePage.checkUserLogin()
-                .openDrobDownMenu()
-                .clickExit();
-
+                .openDrobDownMenu();
+                if(login.equals("joypy3")){
+                    officePage.chooseProfileMenu();
+                    profilePage.clickOnCountrySelect("Украина");
+                }else {
+                    officePage.clickExit();
+                }
 
 
     }
