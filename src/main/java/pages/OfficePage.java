@@ -21,6 +21,13 @@ public class OfficePage extends BasePage {
         assert adminStatus.equals(expected);
         return this;
     }
-
+    public OfficePage openDrobDownMenu() {
+        clickElement(By.xpath("//*[@class = 'header_branding__user_name']/span"));
+        return this;
+    }
+    public OfficePage clickExit() {
+        clickElement(By.xpath("//*[text() = 'Выход']"));
+        return this;
+    }
 
 }

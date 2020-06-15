@@ -7,12 +7,9 @@ import java.io.IOException;
 public class LoginPageTest extends BasicTest {
 
 
-    @DataProvider(name = "loginExellDataProvider")
-    public Object[][] exelData() throws IOException {
-        return new ExellReader().readXls();
-    }
 
-    @Test(dataProvider = "loginExellDataProvider")
+
+    @Test(dataProvider = "loginExellDataProvider", dataProviderClass = ExellReader.class)
     public void firstTaskTest(String login, String password) {
         mainPage.goTo()
                 .OpenLoginPage();
@@ -20,7 +17,9 @@ public class LoginPageTest extends BasicTest {
         .fillLoginField(login)
                 .fillPasswordField(password)
                 .clickLoginButton();
-        officePage.checkUserLogin();
+        officePage.checkUserLogin()
+                .openDrobDownMenu()
+                .clickExit();
 
 
 
