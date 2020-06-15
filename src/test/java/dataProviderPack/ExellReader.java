@@ -11,7 +11,7 @@ public class ExellReader {
     FileInputStream fis = new FileInputStream("src/test/java/dataProviderPack/credentials.xlsx");
     XSSFWorkbook workbook = new XSSFWorkbook(fis);
     XSSFSheet sheet = workbook.getSheet("list");
-    int totalRows = sheet.getLastRowNum() - 1 ;
+    int totalRows = sheet.getLastRowNum() ;
     int totalColums = sheet.getRow(0).getPhysicalNumberOfCells();
     Object obj[][] = new Object[totalRows][totalColums];
     for (int i = 0; i < totalRows; i++){
