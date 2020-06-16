@@ -1,8 +1,5 @@
 import dataProviderPack.ExellReader;
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-
-import java.io.IOException;
 
 public class LoginPageTest extends BasicTest {
 
@@ -21,7 +18,8 @@ public class LoginPageTest extends BasicTest {
                 .openDrobDownMenu();
                 if(login.equals("joypy3")){
                     officePage.chooseProfileMenu();
-                    profilePage.clickOnCountrySelect("Украина");
+                    profilePage.chooseCountry("Украина")
+                    .chooseRegion("100");
                 }else {
                     officePage.clickExit();
                 }
