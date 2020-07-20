@@ -1,6 +1,4 @@
-/home/dark-qa/IdeaProjects/teamring-java2/src/main/java/Tools/Params.java
-/home/dark-qa/IdeaProjects/teamring-java2/src/main/java/pages/MainPage.java
-/home/dark-qa/IdeaProjects/teamring-java2/src/main/java/pages/BasePage.java
-/home/dark-qa/IdeaProjects/teamring-java2/src/main/java/pages/OfficePage.java
-/home/dark-qa/IdeaProjects/teamring-java2/src/main/java/pages/LoginPage.java
-/home/dark-qa/IdeaProjects/teamring-java2/src/main/java/Tools/RunContext.java
+/home/qa-engineer/SeleniumJava1.0/src/main/java/Tools/RunContext.java
+/home/qa-engineer/SeleniumJava1.0/src/main/java/Tools/Params.java
+/home/qa-engineer/SeleniumJava1.0/src/main/java/pages/MainPage.java
+/home/qa-engineer/SeleniumJava1.0/src/main/java/pages/BasePage.java

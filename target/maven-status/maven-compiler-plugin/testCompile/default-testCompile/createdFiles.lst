@@ -1,4 +1,2 @@
-pageTest.class
-dataProviderPack/ExellReader.class
-LoginPageTest.class
-BasicTest.class
+comCucumber/steps/Hooks.class
+comCucumber/steps/MainPageStep.class

@@ -1,6 +1,3 @@
 Tools/Params.class
-pages/OfficePage.class
 Tools/RunContext.class
-pages/LoginPage.class
 pages/MainPage.class
-pages/BasePage.class
