@@ -1,8 +1,9 @@
-package comCucumber.steps;
+package comCucumber.ui.steps;
 
 import Tools.Params;
+import com.codeborne.selenide.Configuration;
 import io.cucumber.java.Before;
-import pages.MainPage;
+import pages.ui.MainPage;
 
 import static com.codeborne.selenide.Selenide.open;
 
@@ -11,6 +12,7 @@ public class Hooks {
     Params params = new Params();
     @Before
     public void openURL() {
-        open(params.TEST_URL);
+        Configuration.startMaximized = true;
+        open(params.UI_URL);
     }
 }
