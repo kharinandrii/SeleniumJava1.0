@@ -5,7 +5,7 @@ import Tools.Params;
 import static io.restassured.RestAssured.when;
 import static org.hamcrest.Matchers.equalTo;
 
-public class ApiGet {
+public class ApiRequests {
     Params params = new Params();
     public void getAnimal(String animslID) {
         when()
@@ -14,5 +14,8 @@ public class ApiGet {
                 .assertThat().body("name", equalTo("doggie"), "id", equalTo(animslID));
     }
 
+public void createNewAnimal() {
 
+}
+//TODO продолжить написание апи тестов с создания животного
 }
