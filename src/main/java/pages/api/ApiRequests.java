@@ -17,5 +17,6 @@ public class ApiRequests {
 public void createNewAnimal() {
 
 }
-//TODO продолжить написание апи тестов с создания животного
+//TODO продолжить написание апи тестов с создания животного https://www.youtube.com/watch?v=FT2h4BdkXlE&t=9s
+
 }
